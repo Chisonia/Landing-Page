@@ -98,42 +98,42 @@ header p {
 
 /* Features Section */
 .features {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.features h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.feature-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .feature-item img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    max-width: 100px;
+    margin-bottom: 15px;
 }
 
 .feature-item h3 {
-    font-size: 1.8em;
     margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
 }
 
 .feature-item p {
-    font-size: 1.1em;
-    color: #555;
-    max-width: 600px;
-    margin: 0 auto;
+    font-size: 1rem;
+    color: #666;
 }
-
 /* About Section */
 .about {
     padding: 50px 20px;
